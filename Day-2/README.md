@@ -8,7 +8,7 @@ This is the day 2 first project. it is a program written in python which calcula
 ## REMAINING YEARS,MONTH,WEEK AND DAYS LEFT<hr>
 
 
-The second project for day 2 we recevie the user age then tell the user how many years, months, weeks, days, that are left if we assume the user dies at age 90<hr>
+The second project for day 2 we recevie the user age then tell the user how many years, months, weeks, days, that are left if we assume the user dies at age 100<hr>
 ## The Tax calculator<hr>
 
 
