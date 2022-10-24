@@ -6,7 +6,7 @@ from pickletools import int4
 
 print("~~~~~~~~~~~~ Leap Year Checker ~~~~~~~~~~~~")
 check = True
-while check: 
+while check:
     try:
         year = int(input("Input the year you'll like to check: "))
         year = str(year)
@@ -37,4 +37,4 @@ while check:
             check = True
     except ValueError:
         print("You should input only numbers")
-        check = True        
+        check = True
