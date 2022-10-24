@@ -9,3 +9,7 @@ the user guess the output of a coin flip.
 
 This is a program that runs two dice and gives it's output
 it is also built using the random module in pytyhon
+
+## Bill payer
+
+This is a simple program that choose a user from the supplied name of users to pay the fees of other users.
