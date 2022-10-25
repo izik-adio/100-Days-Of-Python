@@ -13,3 +13,7 @@ it is also built using the random module in pytyhon
 ## Bill payer
 
 This is a simple program that choose a user from the supplied name of users to pay the fees of other users.
+
+## Rock Paper Scissors
+
+This is a simple program that makes playing the rock,paper,scissors game more fun.
