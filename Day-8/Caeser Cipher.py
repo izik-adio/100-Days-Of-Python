@@ -1,20 +1,54 @@
-from string import ascii_lowercase
+from string import printable
 
-alphabet = list(ascii_lowercase)
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").strip()
-text = input("Type your message: ").strip().lower()
-shift = int(input("Type the shift number: "))
+art = """
+   ###    ######     ##      ####    ######   #####
+  #   #   #         #  #    #    #   #        #    #
+ #        #        #    #   #        #        #    #
+ #        ####     ######    ####    ####     #####
+ #        #        #    #        #   #        #  #
+  #   #   #        #    #   #    #   #        #   #
+   ###    ######   #    #    ####    ######   #    #
+   
+              #           #
+                          #
+      ####   ##    ####   ####    ###   # ##
+     #        #    #   #  #   #  #   #  ##
+     #        #    #   #  #   #  #####  #
+     #        #    #   #  #   #  #      #
+      ####   ###   ####   #   #   ###   #
+                   #
+                   #
 
-def encrypt(text,shift):
-    text = list(text)
+"""
+
+def ceaser(direction,text,shift):
+    # generate the alphabet a-z
+    characters = list(printable) * 2
     cipher_text = ""
+    if direction == "decode":
+        shift *= -1
     for i in range(len(text)):
-        text_index = alphabet.index(text[i])
-        new_index = text_index + shift
-        text[i] = alphabet[new_index]
-    for letter in text:
-        cipher_text += letter
-    print(f"The encoded text is {new_text}")
+        if text[i] not in characters:
+            cipher_text += text[i]
+        else:
+            text_index = printable.index(text[i])
+            new_index = text_index + shift
+            cipher_text += printable[new_index]
+    print(f"The {direction}d text is {cipher_text}")      
 
-encrypt(text,shift)    
-    
+while True:
+    print(art)
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt: ").strip()
+    if direction == "encode" or direction == "decode":
+        text = input("Type your message: ").strip()
+        shift = int(input("Type the shift number: ")) % 100
+        ceaser(direction,text,shift)
+    else:
+        print("Invalid Input")
+
+    opt = input("Would you like to go again.Reply with 'yes' or 'no': ").lower().strip()
+    if opt == 'yes':
+        True
+    else:
+        print("Good Bye")
+        break
