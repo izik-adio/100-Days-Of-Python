@@ -2,14 +2,14 @@
 <hr>
 
 
-## I pledge to complete this 100 days of python Course in Flying Colors
+### I pledge to complete this 100 days of python Course in Flying Colors
 
 
 ![100-Days-Of-Python](https://user-images.githubusercontent.com/111295757/196781976-fe6d2065-3e14-4837-bbd1-a980acd679c1.png)
 
-# 100 DAYS OF CODE COMPLETE PROFESSIONAL PYTHON BOOTCAMP SYLLABUS
+## 100 DAYS OF CODE COMPLETE PROFESSIONAL PYTHON BOOTCAMP SYLLABUS
 
-## BEGINNER PYTHON 
+### BEGINNER PYTHON 
 
 * Variables in Python 
 * String Manipulation
@@ -36,7 +36,7 @@
 * Scope and Local/Global Variables
 * Debugging Techniques
 
-## INTERMEDIATE PYTHON
+### INTERMEDIATE PYTHON
 
 * Local Development Environment Setup
 * PyCharm Tips and Tricks
@@ -71,7 +71,7 @@
 * Working with date and time
 * Hosting Python Code Online with PythonAnywhere
 
-## INTERMEDIATE (Upgrade)
+### INTERMEDIATE (Upgrade)
 
 * APIs
 * Making HTTP Requests with the Requests module
@@ -90,7 +90,7 @@
 * Templating with Jinja 2
 * WTForms
 
-## ADVANCED PYTHON
+### ADVANCED PYTHON
 
 * Build Your Own REST API with Python
 * Build Your Own Blog
@@ -121,7 +121,7 @@
 * Log Transformations
 * Residuals Analysis
 
-## PROFESSIONAL PORTFOLIO BUILDING INDEPENDENT ASSIGNMENTS
+### PROFESSIONAL PORTFOLIO BUILDING INDEPENDENT ASSIGNMENTS
 
 * Text to Morse Code Converter
 * Portfolio Website
