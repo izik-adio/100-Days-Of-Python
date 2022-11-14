@@ -7,36 +7,21 @@ resorce = {"water":300, "milk":200, "coffee":100, "money":0}
 # create report function that retrun what is at hand
 def report():
     """It shows the current resource values"""
-    water = resorce["water"]
-    milk = resorce["milk"]
-    coffee = resorce["coffee"]
-    money = resorce["money"]
-    print(f"Water: {water}ml\nMilk: {milk}ml\nCoffe: {coffee}g\nMoney: ${money}")
+    print(f'Water: {resorce["water"]}ml\nMilk: {resorce["milk"]}ml\nCoffe: {resorce["coffee"]}g\nMoney: ${resorce["money"]}')
 
 # create function that process coin
 def process_coin():
     """Get the user coin and return the total"""
-    quarters = 0.25
-    dimes = 0.10
-    nickles = 0.05
-    pennies = 0.01
-
-    quarters_pay = 0
-    dimes_pay = 0
-    nickles_pay = 0
-    pennies_pay = 0
-
+    total = 0
     print("Insert your coins.")
     try:
-        quarters_pay = float(input("How many quaters?: "))
-        dimes_pay = float(input("How many dimes?: "))
-        nickles_pay = float(input("How many nickles?: "))
-        pennies_pay = float(input("How many pennies?: "))
-
+        total += float(input("How many quaters?: ")) * 0.25
+        total += float(input("How many dimes?: ")) * 0.10
+        total += float(input("How many nickles?: ")) * 0.05
+        total += float(input("How many pennies?: ")) * 0.01
     except (ValueError, TypeError):
         print("Invalid input")
-    pay = (quarters * quarters_pay) + (dimes * dimes_pay) + (nickles * nickles_pay) + (pennies * pennies_pay)
-    return pay
+    return total
 
 # check that the transaction is successful
 def transaction_check(coffee_choice):
@@ -47,9 +32,7 @@ def transaction_check(coffee_choice):
         "latte": MENU["latte"]["cost"],
         "cappuccino": MENU["cappuccino"]["cost"],     
         }
-    
     pay = process_coin()
-
     def check(price):
         """It checks if the price is less, equal or over"""
         if pay < price:
@@ -70,7 +53,6 @@ def transaction_check(coffee_choice):
 def confirm_resource(coffee_choice):
     if (resorce["milk"] >= MENU[coffee_choice]["ingredients"]["milk"]) and (resorce["water"] >= MENU[coffee_choice]["ingredients"]["water"]) and (resorce["coffee"] >= MENU[coffee_choice]["ingredients"]["coffee"]):
         return True
-    
     else:
         for value in MENU["espresso"]["ingredients"]:
             if resorce[value] < MENU[coffee_choice]["ingredients"][value]:
@@ -101,6 +83,7 @@ while on:
         if coffee_choice == "report":
             report()
         elif coffee_choice == "off":
+            clear()
             on = off
         else:
             clear()
