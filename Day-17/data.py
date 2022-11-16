@@ -20,7 +20,7 @@ question_data = [
         {
             "category": "Entertainment: Video Games",
             "difficulty": "easy",
-            "question": "The main character in the &quot;Half-Life&quot; franchise is named Morgan Freeman.",
+            "question": "The main character in the 'Half-Life' franchise is named Morgan Freeman.",
             "correct_answer": "False",
 
         },
@@ -42,7 +42,7 @@ question_data = [
         {
             "category": "Entertainment: Comics",
             "difficulty": "hard",
-            "question": "In the comic book &quot;Archie&quot;, Betty is friends with Veronica because she is rich.",
+            "question": "In the comic book 'Archie', Betty is friends with Veronica because she is rich.",
             "correct_answer": "False",
 
         },
@@ -71,7 +71,7 @@ question_data = [
         {
             "category": "Entertainment: Film",
             "difficulty": "easy",
-            "question": "In the original script of &quot;The Matrix&quot;, "
+            "question": "In the original script of 'The Matrix', "
                         "the machines used humans as additional computing power instead of batteries.",
             "correct_answer": "True",
         },
@@ -84,14 +84,14 @@ question_data = [
         {
             "category": "Entertainment: Japanese Anime & Manga",
             "difficulty": "easy",
-            "question": "The anime &quot;Lucky Star&quot; follows the story of one girl who is unaware she is God.",
+            "question": "The anime 'Lucky Star' follows the story of one girl who is unaware she is God.",
             "correct_answer": "False",
 
         },
         {
             "category": "Entertainment: Board Games",
             "difficulty": "easy",
-            "question": "The card game &quot;Munchkin&quot; won the 2001 Origins Award for Best Traditional Card Game.",
+            "question": "The card game 'Munchkin' won the 2001 Origins Award for Best Traditional Card Game.",
             "correct_answer": "True",
         },
         {
@@ -122,15 +122,15 @@ question_data = [
         {
             "category": "General Knowledge",
             "difficulty": "medium",
-            "question": "The French word to travel is &quot;Travail&quot;",
+            "question": "The French word to travel is 'Travail'",
             "correct_answer": "False",
 
         },
         {
             "category": "Entertainment: Video Games",
             "difficulty": "hard",
-            "question": "In Undertale, having a &quot;Fun Value&quot; set to 56-57 will play the &quot;Wrong Number "
-                        "Song Call&quot;.",
+            "question": "In Undertale, having a 'Fun Value' set to 56-57 will play the 'Wrong Number "
+                        "Song Call'.",
             "correct_answer": "False",
 
         },
@@ -181,7 +181,7 @@ question_data = [
         {
             "category": "Entertainment: Board Games",
             "difficulty": "easy",
-            "question": "&quot;PAYDAY: The Heist&quot; is a sequel to the board game &quot;Payday&quot;.",
+            "question": "'PAYDAY: The Heist' is a sequel to the board game 'Payday'.",
             "correct_answer": "False",
 
         },
@@ -189,7 +189,7 @@ question_data = [
             "category": "Politics",
             "difficulty": "easy",
             "question": "One of Barack Obama&#039;s United States presidential "
-                        "campaign slogan&#039;s was &quot;Yes We Can&quot;.",
+                        "campaign slogan&#039;s was 'Yes We Can'.",
             "correct_answer": "True",
         },
         {
@@ -220,7 +220,7 @@ question_data = [
         {
             "category": "Entertainment: Video Games",
             "difficulty": "easy",
-            "question": "The ghosts in &quot;Pac-Man&quot; and &quot;Ms. Pac-Man&quot;"
+            "question": "The ghosts in 'Pac-Man' and 'Ms. Pac-Man'"
                         " have completely different behavior.",
             "correct_answer": "True",
         },
@@ -233,7 +233,7 @@ question_data = [
         {
             "category": "Entertainment: Television",
             "difficulty": "medium",
-            "question": "An episode of &quot;The Simpsons&quot; is dedicated to Moe Szyslak&#039;s bar rag.",
+            "question": "An episode of 'The Simpsons' is dedicated to Moe Szyslak&#039;s bar rag.",
             "correct_answer": "True",
         },
         {
@@ -246,20 +246,20 @@ question_data = [
         {
             "category": "Entertainment: Books",
             "difficulty": "easy",
-            "question": "&quot;Green Eggs and Ham&quot; consists of only 50 different words.",
+            "question": "'Green Eggs and Ham' consists of only 50 different words.",
             "correct_answer": "True",
         },
         {
             "category": "Entertainment: Film",
             "difficulty": "medium",
-            "question": "The movie &quot;Tron&quot; received an Oscar nomination for Best Visual Effects.",
+            "question": "The movie 'Tron' received an Oscar nomination for Best Visual Effects.",
             "correct_answer": "False",
 
         },
         {
             "category": "Entertainment: Music",
             "difficulty": "easy",
-            "question": "The 2011 movie &quot;The Adventures of Tintin&quot; was directed by Steven Spielberg.",
+            "question": "The 2011 movie 'The Adventures of Tintin' was directed by Steven Spielberg.",
             "correct_answer": "True",
         },
         {
@@ -310,14 +310,14 @@ question_data = [
         {
             "category": "Science & Nature",
             "difficulty": "medium",
-            "question": "&quot;Tachycardia&quot; or &quot;Tachyarrhythmia&quot; "
+            "question": "'Tachycardia' or 'Tachyarrhythmia' "
                         "refers to a resting heart-rate near or over 100 BPM.",
             "correct_answer": "True",
         },
         {
             "category": "Entertainment: Video Games",
             "difficulty": "hard",
-            "question": "The Paradox Interactive game &quot;Stellaris&quot; was released in 2016.",
+            "question": "The Paradox Interactive game 'Stellaris' was released in 2016.",
             "correct_answer": "True",
         },
         {

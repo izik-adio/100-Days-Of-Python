@@ -9,6 +9,7 @@ for items in question_data:
 
 quiz = QuizBrain(question_bank)
 
+quiz.quiz_amount_choice()
 while quiz.still_has_questions():
     quiz.next_question()
 
