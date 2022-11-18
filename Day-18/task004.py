@@ -1,3 +1,4 @@
+""" draw multicolor small square at rando direction """
 from turtle import Turtle, Screen, done
 from random import random, randint, choice
 
@@ -8,7 +9,6 @@ my_tim.pensize(6)
 my_screen = Screen()
 my_screen.bgcolor("black")
 
-# draw multicolor small square at rando direction
 randint(50, 500)
 for _ in range(1000000):
     my_tim.color(random(), random(), random())

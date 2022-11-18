@@ -1,3 +1,4 @@
+"""draw diffrent shapes from three sides to 10 sides with each shape having diffrent color"""
 from random import random
 from turtle import Turtle, Screen, done
 
@@ -7,7 +8,7 @@ tim.speed(3)
 
 my_screen = Screen()
 
-# draw diffrent shapes from three sides to 10 sides with each shape having diffrent color
+
 for x in range(2):
     if x == 0:
         for i in range(3, 11):
@@ -23,5 +24,5 @@ for x in range(2):
                 tim.forward(100)
                 tim.right(angle)
             tim.color(random(), random(), random())
-        
+
 done()
