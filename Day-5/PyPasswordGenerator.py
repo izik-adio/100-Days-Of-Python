@@ -43,6 +43,6 @@ for items in pass_list:
 pass_dict = {use:password}
 print(f"Your newly generated password is: {password}")
 
-f = open("password.txt","a")
-f.write(f"\n{str(pass_dict)}")
-f.close()
+#f = open("password.txt","a")
+#f.write(f"\n{str(pass_dict)}")
+#f.close()
