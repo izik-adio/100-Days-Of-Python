@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "letter_templates"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

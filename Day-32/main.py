@@ -1,24 +1,39 @@
-##################### Extra Hard Starting Project ######################
 import pandas
-from smtplib import SMTP
-from random import choice
 from datetime import datetime
+from smtplib import SMTP
+from random import randint
 
-# 1. Update the birthdays.csv
 data = pandas.read_csv("./birthdays.csv")
-processed_data = pandas.DataFrame(data=data)
-if 
-
-# 2. Check if today matches a birthday in the birthdays.csv
-for n in processed_data:
-        print(n)
+data_frame = pandas.DataFrame(data)
+users_data = {(user_data["day"], user_data["month"]):(user_data["name"], user_data["email"]) for _, user_data in data_frame.iterrows()}
 
 
-current_month = datetime.now().month
-current_day = datetime.now().day
+now = datetime.now()
+todays_date = (now.day, now.month)
+
+def checker() -> tuple:
+    for dob, details in users_data.items():
+        if dob == todays_date:
+            return details
 
 
-# 3. If step 2 is true, pick a random letter from letter templates and replace the [NAME] with the person's actual name from birthdays.csv
+if todays_date in users_data:
+    print("yes")
+    user_details = checker()
+    name = user_details[0]
+    email = user_details[1]
+    letter_path = f"letter_templates/letter_{randint(1, 3)}.txt"
+    with open(letter_path, "r") as letter:
+        letter_lines = letter.read()
+        new_letter = letter_lines.replace("[NAME]", name)
+    bot_mail = "ZikTech001@outlook.com"
+    bot_password = "ThePyPass"
 
-# 4. Send the letter generated in step 3 to that person's email address.
-
+    with SMTP("smtp-mail.outlook.com", port=587) as connection:
+        connection.starttls()
+        connection.login(bot_mail, bot_password)
+        connection.sendmail(
+            from_addr=bot_mail, 
+            to_addrs=email, 
+            msg=f"Happy Birthday \n\n{new_letter}"
+            )
